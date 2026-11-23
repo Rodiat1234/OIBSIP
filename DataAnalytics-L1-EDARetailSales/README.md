@@ -1,29 +1,52 @@
 # Exploratory Data Analysis on Retail Sales Data
 
 **Oasis Infobyte Data Analytics Internship | Level 1, Task 1**
+
 **Intern:** Rodiat Jimoh
 
 ## Objective
 Explore an e-commerce sales dataset to understand sales trends, who the customers are, which product categories earn the most, and which variables are related, then turn the findings into business recommendations.
 
 ## Dataset
-E-commerce customer behaviour dataset: 5,000 transactions from 1 January 2023 to 26 March 2024. All amounts are in Turkish Lira (TRY).
-Source: [paste the link to the page you downloaded it from]
+E-commerce customer behaviour data: 5,000 transactions from 1 January 2023 to 26 March 2024. All amounts are in Turkish Lira (TRY).
 
-Main columns: `Date`, `Age`, `Gender`, `Product_Category`, `Unit_Price`, `Quantity`, `Discount_Amount`, `Total_Amount`, `Customer_Rating`, and others.
+Source: Kaggle, "E-Commerce Customer Behavior and Sales Analysis" by umuttuygurr: https://www.kaggle.com/datasets/umuttuygurr/e-commerce-customer-behavior-and-sales-analysis-tr
 
 ## Tools Used
-Python, pandas, numpy, matplotlib, seaborn, Jupyter Notebook
+Python, pandas, matplotlib, seaborn, Jupyter Notebook
 
 ## Steps I Followed
-1. **Loaded and inspected** the data (shape, data types, missing values, duplicates).
+1. **Loaded and inspected** the data (shape, data types, missing values).
 2. **Descriptive statistics:** mean, median, mode, and standard deviation of the numerical columns.
 3. **Sales trends:** converted `Date` to a datetime type, then plotted monthly and quarterly sales.
-4. **Customer demographics:** age distribution (histogram and age groups) and gender breakdown.
+4. **Customer demographics:** age distribution and gender breakdown.
 5. **Product analysis:** revenue and share of revenue by product category.
 6. **Correlation heatmap** of the numerical variables.
 7. **Additional visualisation:** average spend per transaction by category.
 8. **Conclusions and recommendations.**
+
+## Visualisations
+
+### Monthly Sales Trend
+![Monthly sales trend](EDA%201.png)
+
+### Quarterly Sales Trend
+![Quarterly sales trend](EDA%202.png)
+
+### Distribution of Customer Age
+![Age distribution](EDA%203.png)
+
+### Customers by Gender
+![Customers by gender](EDA%204.png)
+
+### Revenue by Product Category
+![Revenue by product category](EDA%205.png)
+
+### Correlation Heatmap
+![Correlation heatmap](EDA%206.png)
+
+### Average Spend per Transaction by Category
+![Average spend by category](EDA%207.png)
 
 ## Key Findings
 - **Sales trend:** monthly sales ranged from about 257,000 TRY (April 2023) to about 397,000 TRY (January 2024). The weakest quarter was 2023 Q2, and the strongest was 2023 Q4.
@@ -47,6 +70,6 @@ Python, pandas, numpy, matplotlib, seaborn, Jupyter Notebook
 - Correlation does not prove cause and effect.
 
 ## How to Run
-1. Install the libraries: `pip install pandas numpy matplotlib seaborn`
-2. Download the dataset (link above) and place it in the same folder as the notebook.
-3. Open the notebook in Jupyter Notebook, check the file name in the loading cell, and run all cells.
+1. Install the libraries: `pip install pandas matplotlib seaborn`
+2. Download the dataset (link above) and save it in the same folder as the notebook as `ecommerce_customer_behavior_dataset.csv`.
+3. Open `DataAnalytics-L1-EDARetailSales.ipynb` in Jupyter Notebook and run all cells.
